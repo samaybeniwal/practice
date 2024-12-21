@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bgc</title>
+    <style>
+        .button{
+            margin:10px;
+            font-size: 2rem;
+            padding: 10px;
+            border:5px solid green;
+            border-radius: 10px;
+            background-color: black;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="text">Click On Button TO Change The Colour</h1>
+        
+    </div>
+    <button id="start" class="button">Start</button>
+        <button id="stop" class="button">Stop</button>
+</body>
+<script>
+    let div = document.querySelector('.container')
+    
+    
+    let randomcolor=function(){
+        let hex = '0123456789ABCDEF';
+        let color = '#'
+        for(let i=0; i<6; i++){
+            color += hex[Math.floor(Math.random()*16)];
+        }
+        return color;
+
+
+    }
+    let interval;
+    let startChangingColor=function(){
+      interval=setInterval(changeBC,1000)
+
+        function changeBC(){
+           document.body.style.backgroundColor= randomcolor();
+        }
+        
+    }
+    let stopChangingColor=function(){
+         clearInterval(interval);
+    }
+
+   
+    let startbutton=document.getElementById("start")
+   
+    
+    startbutton.addEventListener('click',startChangingColor)
+    let stopbutton=document.getElementById("stop")
+    stopbutton.addEventListener('click',stopChangingColor);
+    
+   
+</script>
+</html>

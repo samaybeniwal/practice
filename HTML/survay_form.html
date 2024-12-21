@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>Survay form</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet"> 
+       
+    </head>
+    <body>
+        <div class="survay"
+        <header>SURVAY FORM</header>
+    </div>
+        <form>
+            <h2 id="main">Customer name </h2>
+            <div id="taking">
+            <label for="first_name" ><b>Enter first name</b></label>
+            <input type="text" placeholder="Enter your name" id="first_name">
+            <br>
+            <label for="last_name"><b>Enter your last name </b></label>
+            <input type="text" placeholder="enter your last name" 
+            id="last_name">
+            </div>
+            <!-- address -->
+             <h2>Address</h2>
+            <label for="Street"><b>street number </b></label>
+            <input type="text" placeholder="street no." id="Street">
+            <br>
+            <label for="Street_2"><b>Street line 2</b></label>
+            <input type="text" placeholder="street" id="Street_2">
+            <br>
+            <label for="city"><b>City</b></label>
+            <input type="text" placeholder="city name" id="city">
+            <label for="state"><b>State</b></label>
+            <input type="text" placeholder="State name " id="state">
+            <br>
+            <label for="pincode"><b>Pincode </b></label>
+            <input type="text" placeholder="Pin code" id="pincode">
+            <!-- country -->
+             <br>
+             <label for="country"><b>country</b></label>
+             <select id="country">
+                <option value="select country">select country</option>
+                <option value="IND">INDIA</option>
+                <option value="AUS">Australia</option>
+                <option value="Eng">England</option>
+             </select>
+             <br>
+             <!-- Contact -->
+             <h2>Contact</h2>
+             <label for="moblie">Phone no.</label>
+             <input type="tel" placeholder="Phone no." id="moblie">
+             <label for="email">E-mail</label>
+             <input type="email" placeholder="E-mail " id="email">
+             <br>
+             <!-- personal details -->
+              <h2>personal Detail</h2>
+              <br>
+             <input type="radio" id="male" name="gender" value="male">
+              <label for="male"><b>Male</b></label>
+              <br>
+              <input type="radio" id="female" name="gender" value="female">
+              <label for="female"><b>Female</b></label>
+              <br>
+              <input type="radio" id="other" name="gender" value="other">
+              <label for="other"><b>Other</b></label>
+              <br>
+              <!-- sumbit -->
+               <br>
+               <center>
+               <button type="submit">sumbit</button>
+               <button type="reset">reset</button>
+               </center>
+
+            
+
+        </form>
+    </body>
+    <script>
+      const som=document.querySelectorAll('h2')
+      console.log(som);
+      // som.forEach(function(i){
+      //   console.log(i);
+      // })
+      //let arr= Array.from(som);
+      // for(let i=0;i<arr.length;i++){
+      //   console.log(arr[i]);
+      // }
+      
+    </script>
+</html>

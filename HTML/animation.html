@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style> 
+        #box{
+            border:3px solid pink;
+            margin:2px;
+            width:250px;
+            height: 70px;
+            position: relative;
+            background-color: aqua;
+            animation: box1 5s linear 1s infinite none running alternate;
+           
+        }
+        @keyframes box1{
+                from{
+                    top:0;
+                    left:0;
+                }
+                to{
+                    top:0;
+                    left:83%;
+                }
+            }
+        #box2{
+            border:3px solid pink;
+            margin:2px;
+            width:250px;
+            height: 70px;
+            background-color: aqua;
+            position: relative;
+            animation: boxy 5s linear 1s alternate none running infinite;
+        }
+        @keyframes boxy{
+                from{
+                    top:525px;
+                    left:83%;
+                }
+                to{
+                    top:525px;
+                    left:0%;
+                }
+            }
+        #circle{
+            border:3px solid palevioletred;
+            border-radius: 40px;
+            margin:2px;
+            width:75px;
+            height: 70px;
+            background-color:yellow;
+            position: relative;
+            top:110px;
+            left:45%;
+            animation: cric 9s linear infinite running ;
+
+        }
+        @keyframes cric {
+            0%{
+            top:110px;
+            left:45%;
+            }
+            25%{ 
+                top:450px;
+                left:83%;
+
+            }
+            45%{
+                top:0px;
+                left:50%
+            }
+            75%{
+                top:450px;
+                right:0%;
+
+            }
+            90%{
+                top:0;
+                left:0;
+
+            }
+
+            
+        }
+         
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box">
+
+        </div>
+        <div id="box2">
+
+        </div>
+        <div id="circle">
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

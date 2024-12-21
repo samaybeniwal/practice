@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width:100%;
+    height:100%;
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cardbox{
+    width: 360px;
+    height: 600px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    transition: all 3s linear 0s;
+}
+.cardbox img{
+    height:350px;
+    top:0;
+    padding: 20px;
+    border-radius: 50px;
+    transition: all 3s linear 0s;
+}
+.cardbox h2{
+    text-align: center;
+    font-style: bold;
+    font-size: 1.7rem;
+}
+.cardbox p{
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 3px;
+}
+.cardbox:hover img{
+    transform: skew(180deg);
+}
+.cardbox:hover{
+    transform: scale(1.3);
+}

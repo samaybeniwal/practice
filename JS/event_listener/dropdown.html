@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+</head>
+<style>
+    .dropmenu{
+        background-color: violet;
+        width:50%;
+        height:400px;
+       
+    }
+    .dropdown-button{
+        display:inline-block;
+    }
+
+    .dropdown-option{
+        display:none;
+    }
+
+</style>
+<body>
+    <div class="dropmenu">
+        <button class="dropdown-button">Select a Subject</button>
+        <ul id="dropdown-options" class="dropdown-options">
+          <li class="dropdown-option">Mathematics</li>
+          <li class="dropdown-option">English</li>
+          <li class="dropdown-option">Physics</li>
+        </ul>
+    </div>
+</body>
+<script>
+    let dropmenu=document.querySelector('.dropdown-button')
+    console.log(dropmenu);
+   let dropdown_option=document.querySelectorAll('.dropdown-option')
+   console.log(dropdown_option);
+   
+    dropmenu.addEventListener("click",(e)=>{
+        // alert("clicked!")
+        dropdown_option.forEach((item)=>{
+            addEventListener("click",()=>{
+                item.style.display="block";
+            })
+        })
+    })
+   
+</script>
+</html>

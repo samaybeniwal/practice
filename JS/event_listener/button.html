@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .newdiv{
+            background-color: blue;
+            height:300px;
+            width:400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 2rem;
+            margin-top:10rem;
+        }
+        #button{
+            font-size:2rem;
+            width:40%;
+            height:50%;
+            background-color: violet;
+            border:1rem solid yellow;
+            border-radius: 2rem;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="newdiv">
+        <button type="button" id="button">Button
+    </div>
+</body>
+<script>
+    let button=document.getElementById('button')
+    console.log(button);
+    button.addEventListener("click",(e)=>{
+        alert("Button Clicked!");
+
+    },false)
+    
+</script>
+</html>

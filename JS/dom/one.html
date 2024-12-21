@@ -1,0 +1,121 @@
+<html>
+    <head>
+        <title>Colour changer</title>
+        <style>
+            .listitem{
+                border-radius:15rem;
+            }
+            /* .listitem:hover{
+                transform:scale(1.2);
+            } */
+        </style>
+    </head>
+   
+    <body>
+        <div id="practice">
+        <p id="1para" class="para">first paragraph</p>
+        <p id="2para" class="para">second paragraph</p>
+        <p id="3para" class="para">Third paragraph</p>
+        <p id="4para" class="para">Fourth paragraph</p>
+        </div>
+    </body>
+    <script>
+    //  let chg=document.querySelectorAll('p')
+    // for(let i=0;i<chg.length;i++){
+    //     Object.assign(chg[i].style,{
+    //     backgroundColor: "black",
+    //     color: "white",
+    //     padding: "10px",
+    //     fontSize: "18px"
+
+    //     })
+    //  }
+    //  document.getElementById('practice').style.backgroundColor="green";
+    // let newdiv=document.createElement('div')
+    // console.log(newdiv);
+    // newdiv.id="newone"
+    // newdiv.innerText="Samay"
+    // document.querySelector('body').appendChild(newdiv);
+    // Object.assign(newdiv.style,{
+    //     backgroundColor:"blue",
+    //     padding:"3rem",
+    //     fontSize:"3rem",
+    //     color:"white",
+    //     margin:"1.3rem",
+    //     border:"2rem red solid",
+    // })
+    // let rmv=document.getElementById('practice');
+    // let chd=document.getElementById('1para');
+    //  rmv.removeChild(chd)
+ let newone=document.createElement('ul')
+ console.log(newone);
+ newone.id="unlist";
+ newone.className="unclass";
+//  item1
+ let listitem1=document.createElement('li')
+ listitem1.id="listitem1";
+ listitem1.className="listitem"
+//  item2
+ let listitem2=document.createElement('li')
+ listitem2.id="listitem2";
+ listitem2.className="listitem"
+//  list3
+ let listitem3=document.createElement('li')
+ listitem3.id="listitem1";
+ listitem3.className="listitem"
+//  list4
+ let listitem4=document.createElement('li')
+ listitem4.id="listitem4";
+ listitem4.className="listitem"
+ let listitem5=document.createElement('li')
+ listitem5.id="listitem5";
+ listitem5.className="listitem"
+ let listitem6=document.createElement('li')
+ listitem6.id="listitem6";
+ listitem6.className="listitem"
+//  append
+ newone.append(listitem1,listitem2,listitem3,listitem4,listitem5,listitem6)
+ let body=document.querySelector('body');
+ body.appendChild(newone);
+//  for(let i=0;i<newone.length;i++){
+//     newone.style.backgroundcolor="green";
+//  }
+ 
+Object.assign(newone.style,{
+    backgroundColor:"green",
+    height:"100%",
+  
+})
+let allitem=document.querySelectorAll('li')
+// for(let i=0;i<allitem.length;i++){
+//     allitem[i].innerText="items";
+//  }
+allitem.forEach((text)=>{
+text.innerText="items";
+Object.assign(text.style,{
+padding:"3rem",
+margin:"10px",
+backgroundColor:"pink",
+
+})
+})
+
+
+
+
+
+
+
+
+
+    
+    
+
+     
+
+     
+     
+     
+       
+    </script>
+</html>
